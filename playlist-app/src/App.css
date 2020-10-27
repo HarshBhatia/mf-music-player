@@ -1,0 +1,30 @@
+.active {
+  color: #3498db;
+}
+.active:before {
+  content: '\25BA';
+}
+
+.container {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: #e3e3e3 solid 1px;
+  background: white;
+  flex-direction: column;
+}
+
+.trackList {
+  appearance: none;
+  list-style: none;
+  padding: 0;
+}
+
+.trackItem {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  border-bottom: #ccc solid 0.5px;
+}
