@@ -1,0 +1,21 @@
+1. In playlist folder
+
+npm install
+npm start
+
+2. In player folder 
+
+npm install
+npm start
+
+3. In angular-library folder
+
+npm install -g @angular/cli
+npm install
+ng serve --single-build
+
+4. In container
+
+
+npm install
+npm start

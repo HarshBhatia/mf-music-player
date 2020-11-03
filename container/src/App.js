@@ -6,6 +6,7 @@ import "./App.css";
 const {
   REACT_APP_PLAYLIST_HOST: playlistHost,
   REACT_APP_PLAYER_HOST: playerHost,
+  REACT_APP_LIBRARY_HOST: libraryHost,
 } = process.env;
 
 function Header() {
@@ -17,11 +18,14 @@ function Header() {
 }
 
 function Playlist() {
-  return <MicroFrontend host={playlistHost} name="Playlist" />;
+  return <MicroFrontend bundle={playlistHost} name="Playlist" />;
 }
 
 function Player() {
-  return <MicroFrontend host={playerHost} name="Player" />;
+  return <MicroFrontend bundle={playerHost} name="Player" />;
+}
+function Library() {
+  return <MicroFrontend bundle={libraryHost} name="Library" />;
 }
 
 function App() {
@@ -30,6 +34,7 @@ function App() {
       <Header />
       <Player />
       <Playlist />
+      <Library />
     </div>
   );
 }
